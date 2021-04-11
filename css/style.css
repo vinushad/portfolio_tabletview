@@ -1,0 +1,281 @@
+html{
+    scroll-behavior: smooth;
+}
+
+/* This stylesheet has all the elements that are on the individual pages 
+Projects Section
+About Me
+Contact Form Page
+Projects
+Responsiveness*/
+
+
+
+
+/* Projects Section */
+
+.projects{
+    min-height: 400px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.projects > img {
+    border: 10px #000 solid;
+    margin: 10px;
+    width: 400px;
+}
+
+#image1 {
+    border: 10px #000 solid;
+    margin: 10px;
+    width: 400px;
+}
+
+#image2 {
+    border: 10px #000 solid;
+    margin: 10px;
+    width: 400px;
+}
+
+#image3 {
+    border: 10px #000 solid;
+    margin: 10px;
+    width: 400px;
+}
+
+#image1:hover {
+	-webkit-transform: rotate(15deg) scale(1.3);
+	transform: scale(1.1);
+	-webkit-transition: .9s ease;
+	transition: .3s ease-in-out;
+}
+
+#image2:hover {
+	-webkit-transform: rotate(15deg) scale(1.3);
+	transform: scale(1.1);
+	-webkit-transition: .3s ease;
+	transition: .3s ease-in-out;
+}
+
+#image3:hover {
+	-webkit-transform: rotate(15deg) scale(1.3);
+	transform: scale(1.1);
+	-webkit-transition: .3s ease;
+	transition: .3s ease-in-out;
+}
+
+
+/* Form - Contact Page*/
+
+input[type=text], select, textarea {
+    width: 100%; /* Full width */
+    padding: 12px; /* Some padding */ 
+    border: 1px solid #ccc; /* Gray border */
+    border-radius: 4px; /* Rounded borders */
+    box-sizing: border-box; /* Make sure that padding and width stays in place */
+    margin-top: 6px; /* Add a top margin */
+    margin-bottom: 16px; /* Bottom margin */
+    resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+  }
+
+  input[type=submit] {
+    background-color: #364142;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+
+  /* hover*/
+  input[type=submit]:hover {
+    background-color: #3d626d;
+  }
+
+  .container {
+    border-radius: 5px;
+    background-color: #b5bebe;
+    padding: 20px;
+  }
+
+  /* About Me Image */
+  .responsive {
+    max-width: 100%;
+    height: auto;
+  }
+
+  /* About Me - Hobby Images */
+
+  .header {
+    text-align: center;
+  }
+
+  .column img{
+    /* display:inline-grid;
+    grid-template-columns: auto auto auto auto;
+    grid-column-gap: 20px;
+    padding: 20px;
+    width: 250px;
+    height: 250px;*/
+    object-fit: cover;
+    justify-content: center;
+    padding-left: 15%;
+    text-align: center;
+    width: 250px;
+    height: 250px;
+  }
+
+
+
+  /* .header {
+    text-align: center;
+    padding: 32px;
+  } */
+
+  /* images */
+  /* .header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex: 50%;
+    padding: 0 4px;
+  }
+
+  .column img {
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+
+  }
+
+  .column img:hover{
+      filter: brightness(60%);
+  } */
+
+
+
+
+ /* Project Pages*/
+
+  .project1 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex: 50%;
+    padding: 0 4px;
+ }
+
+.project1 img {
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 400px;
+    height: 200px;
+    object-fit: cover;
+
+
+}
+
+.project2 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex: 50%;
+    padding: 0 4px;
+ }
+
+.project2 img {
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 400px;
+    height: 200px;
+    object-fit: cover;
+
+}
+
+.project3 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex: 50%;
+    padding: 0 4px;
+ }
+
+.project3 img {
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 400px;
+    height: 200px;
+    object-fit: cover;
+
+}
+
+
+
+/* Responsiveness */
+
+
+/* Tablet View */
+@media only screen and (min-width: 600px) {
+    nav li{
+    display:inline;
+    padding-right:20px;
+
+}
+
+nav {
+    font-size: 14px;
+    background-color: #202333;
+    padding: 20px;
+}
+
+nav li a.active {
+    color: white;
+    /* background-color: rgba(19, 67, 88, 0.705); */
+    border-bottom: #fff 1px solid;
+
+}
+    #menu {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        color: white;
+        font-weight: bold;
+        text-decoration: none;
+        background-color: #202333;
+
+    }
+
+        #menu a {
+            color: rgb(255, 255, 255);
+            text-decoration: none;
+        }
+            #menu a:hover {
+                color:  rgb(153, 157, 177);
+                text-decoration: underline;
+
+            }
+
+
+}
+
+
+
+
+/* Desktop View */
+@media only screen and (min-width: 768px) {
+}
+
+

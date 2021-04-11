@@ -1,0 +1,163 @@
+
+/* This style sheet has all the elements that all the pages have in common
+Main
+Body
+Headings/paragraph
+Navigation
+Footer
+*/
+
+
+/* Skip to Main Content */
+a.skip{
+    background: rgb(182, 186, 207);
+    left: 0;
+    padding: 6px;
+    position: absolute;
+    top: -30px;
+    -webkit-transition: top 1s ease-out;
+    transition: top 1s ease-out;
+    z-index: 1;
+  }
+
+  a.skip:focus{
+    top:0px;
+    color: black;
+    text-decoration-style: solid;
+  }
+
+  *:focus{
+    border: 2px solid black;
+  }
+
+
+
+
+
+
+/* Body */
+body{
+    /* background: url(https://images.pexels.com/photos/2693529/pexels-photo-2693529.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940); */
+    /* background: url(https://images.pexels.com/photos/2835436/pexels-photo-2835436.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940); */
+    background: url(https://images.unsplash.com/photo-1493305457700-d3d24daf8c8c?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80);
+    background-color: #d6dbdd;
+    height: 100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-size: 18px;
+    margin: 0;
+    padding: 0;
+    font-family: "Lexend", sans-serif;
+}
+
+
+
+/* Headings */
+h1{
+    color: rgb(29, 40, 61);
+    font-size: 50px;
+    line-height: 1;
+    padding: 50px 0px 20px 0px;
+    text-align: center;
+}
+
+h2{
+    font-size: 32px;
+    line-height: 1.5;
+    text-align: center;
+    border:rgb(8, 92, 78) 3px;
+    text-align: center;
+}
+
+p {
+    color: rgb(29, 40, 61);
+    font-size: 16px;
+    padding: 0 100px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+/* Navigation */
+/* nav li{
+    display:inline;
+    padding-right:20px;
+
+}
+
+nav {
+    font-size: 14px;
+    background-color: #202333;
+    padding: 20px;
+} */
+
+nav li a.active {
+    color: white;
+    /* background-color: rgba(19, 67, 88, 0.705); */
+    border-bottom: #fff 1px solid;
+
+}
+
+
+/* Navigation Menu Bar*/
+@media only screen and (max-width: 600px) {
+#menu {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    /* justify-content: flex-end; */
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 14px;
+    background-color: #202333;
+    padding:20px;
+    text-align: center;
+}
+
+    #menu a {
+        color: rgb(255, 255, 255);
+        text-decoration: none;
+    }
+        #menu a:hover {
+            color:  rgb(153, 157, 177);
+            text-decoration: underline;
+
+        }
+
+    }
+
+
+
+  /* Footer */
+
+
+  #footer {
+    /* padding: 4rem 0 2rem 0; */
+    padding: 20px;
+    text-align: center;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#footer a {
+    color: rgb(126, 129, 153);
+    text-decoration: none;
+}
+
+#footer p{
+    color: rgb(126, 129, 153);
+}
+
+#footer a:hover {
+    color: #FFF;
+    text-decoration: underline;
+}
+
+ul{
+    list-style-type: none;
+}
